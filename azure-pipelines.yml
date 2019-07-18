@@ -11,7 +11,7 @@ pool:
 
 steps:
 - script: curl -o Fusion360.pkg https://dl-test.appstreaming.autodesk.com/dev/installers/Autodesk%20Fusion%20360%20Admin%20Install.pkg
-  displayName: 'Download Fusion 360
+  displayName: 'Download Fusion 360'
 
 - script: pwd
   displayName: 'pwd'
