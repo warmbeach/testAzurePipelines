@@ -10,14 +10,14 @@ pool:
   vmImage: 'macOS-10.14'
 
 steps:
-- script: sw_vers
-  displayName: 'Check OS X version'
+- script: curl -o Fusion360.pkg https://dl-test.appstreaming.autodesk.com/dev/installers/Autodesk%20Fusion%20360%20Admin%20Install.pkg
+  displayName: 'Download Fusion 360
 
-- script: python -v
-  displayName: 'Check Python 2 version'
+- script: pwd
+  displayName: 'pwd'
 
-- script: python3 -v
-  displayName: 'Check Python 3 version'
+- script: ls
+  displayName: 'List directory contents'
 
 
 - script: |
