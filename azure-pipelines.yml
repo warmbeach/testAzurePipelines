@@ -19,6 +19,16 @@ steps:
 - script: ls
   displayName: 'List directory contents'
 
+- script: sudo installer -pkg Fusion360.pkg -target /
+  displayName: 'Install Fusion 360'
+
+- script: ls /Applications
+  displayName: 'list Applications'
+
+- script: open /Applications/Autodesk Fusion 360.app' -W --args -execute 'NTest.RunTests /Remote /RunAndExit /Rerun' --activateTestingContext
+  displayName: 'Run Fusion 360'
+
+
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
