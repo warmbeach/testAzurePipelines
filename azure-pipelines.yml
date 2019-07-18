@@ -10,8 +10,15 @@ pool:
   vmImage: 'macOS-10.14'
 
 steps:
-- script: echo Hello again, Fusion!
-  displayName: 'Run a one-line script'
+- script: sw_vers
+  displayName: 'Check OS X version'
+
+- script: python -v
+  displayName: 'Check Python 2 version'
+
+- script: python3 -v
+  displayName: 'Check Python 3 version'
+
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
