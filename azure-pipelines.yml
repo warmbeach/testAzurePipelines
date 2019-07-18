@@ -25,7 +25,7 @@ steps:
 - script: ls /Applications
   displayName: 'list Applications'
 
-- script: open /Applications/Autodesk Fusion 360.app' -W --args --exitAfterAddin --activateTestingContext
+- script: open '/Applications/Autodesk Fusion 360.app' -W --args --exitAfterAddin --activateTestingContext
   displayName: 'Run Fusion 360'
 
 
